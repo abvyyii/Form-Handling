@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<div class="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="retrieve.html">Retrieve</a></li>
+        <li><a href="delete.html">Delete</a></li>
+    </ul>
+</div>
+<body>
+
+    <br>
+    <div class="Cont">
+        <h1>Registeration Form</h1>
+        <form class="form" method="post" action="validate.php">
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" placeholder="Username" name="Abhi_user"></td>
+                </tr>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" placeholder="First Name" name="Abhi_fname"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" placeholder="Last name" name="Abhi_lname"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" placeholder="someone@domain.com" name="Abhi_email"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>Male<input type="radio" name="Abhi_gender" value="m" required><br>
+                            Female<input type="radio" name="Abhi_gender" value="f" required></td>
+                    </tr>
+                <tr>
+                    <td>Contact Number:</td>
+                    <td><select name="Abhi_extension_numb">
+                            <option default value="null">Choose one</option>
+                            <option value="+93">+93(Afg)</option>
+                            <option value="+880">+880(Ban)</option>
+                            <option value="+975">+975(Bhu)</option>
+                            <option value="+91">+91(In)</option>
+                            <option value="+960">+960(Mal)</option>
+                            <option value="+977">+977(Nep)</option>
+                            <option value="+92">+92(Pak)</option>
+                            <option value="+94">+94(Sri)</option>
+
+                        </select>
+                        <input type="text" placeholder="Contact Number" class="number" name="Abhi_phno">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <button value="Submit" onclick="validate()">Submit</button>
+                    </td>
+                    <td>
+                        <br>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
